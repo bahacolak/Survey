@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
  export default function Gender(){ 
   const navigate = useNavigate()
       
- 
   const[gender, setGender]=useState();
     return(
         <div>
