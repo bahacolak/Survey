@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
 export default function Date() {
-  
+  const [date, setDate] = useState();
   return (
     <div>
-      hi
+      <h1>Selected Date : {date}</h1>
+      <input type="date" onChange={e =>setDate(e.target.value)}/>
     </div>
   );
 }
