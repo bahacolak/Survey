@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 
  export default function Gender(){ 
-  
+  const navigate = useNavigate()
       
  
   const[gender, setGender]=useState();
@@ -23,7 +23,7 @@ import React, { useState } from "react";
             </label> 
 
             <div>
-                <button>Continue</button>
+                <button onClick={() => navigate('/Date')}>Continue</button>
             </div>
         </div>
     );

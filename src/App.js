@@ -1,9 +1,12 @@
 import './App.css';
-import Date from "./components/Date"
-import Gender from "./components/Gender"
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route} from "react-router-dom";
+import { useState } from 'react';
+//Pages
+import Date from "./components/Date";
+import Gender from "./components/Gender";
 
 function App() {
+  const [cartIsEmpty] = useState(true)
   return ( 
    <>
     <Routes>
