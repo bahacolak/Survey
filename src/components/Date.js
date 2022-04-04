@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function Date() {
+  
   return (
-    <div>If you are here, you are allowed to be here.</div>
+    <div>
+      hi
+    </div>
   );
 }
 
