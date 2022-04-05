@@ -1,0 +1,14 @@
+.container{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 200px;
+}
+
+.text--date{
+    margin-bottom: 0px;
+}
+
+.row{
+    margin-bottom: 10px;
+}
