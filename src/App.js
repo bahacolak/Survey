@@ -4,6 +4,7 @@ import { useState } from 'react';
 //Pages
 import Date from "./components/Date";
 import Gender from "./components/Gender";
+import Place from "./components/Place";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Routes>
       <Route index element={<Gender />}/>
       <Route path='Date' element={<Date />} />
+      <Route path='Place' element={<Place />}/>
     </Routes>
     </>
    );
