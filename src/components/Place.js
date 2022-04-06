@@ -7,14 +7,14 @@ export default function Place() {
 
   const navigate = useNavigate()
   const testData = [
-    { bgcolor: "#6a1b9a", completed: 100 },
+    { bgcolor: "#6a1b9a", completed: 66.6 },
     ];
     return(
        <div>
-       {testData.map((item, idx) => (
+           <div className="container">
+           {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
-           <div className="container">
              <h3>Please Enter Your Place of Birth</h3>
              <input type="text" placeholder="City/Country" />
            </div>

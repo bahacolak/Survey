@@ -9,7 +9,7 @@ import ProgressBar from "./ProgressBar";
   const[gender, setGender]=useState();
   
   const testData = [
-    { bgcolor: "#6a1b9a", completed: 33.3 },
+    { bgcolor: "#6a1b9a", completed: 0.0 },
     ];
     return(
       

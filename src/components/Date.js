@@ -9,15 +9,15 @@ export default function Date() {
   const navigate = useNavigate()
   
   const testData = [
-    { bgcolor: "#6a1b9a", completed: 66.6 },
+    { bgcolor: "#6a1b9a", completed: 33.3 },
     ];
   return (
     
     <div>
-    {testData.map((item, idx) => (
+      <div className='container'>
+      {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
-      <div className='container'>
       <div className='text--date'><h1>Your Date of Birth: {date}</h1>
        <input type="date" onChange={e =>setDate(e.target.value)}/>
       </div>
