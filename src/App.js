@@ -8,10 +8,14 @@ import Place from "./components/Place";
 import Loading from "./components/Loading";
 
 
+
+
+
 function App() {
   const [cartIsEmpty] = useState(true)
   return ( 
    <>
+
     <Routes>
       <Route index element={<Gender />}/>
       <Route path='Date' element={<Date />} />

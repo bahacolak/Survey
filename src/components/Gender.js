@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './Gender.css'
+import './Gender.css';
+import ProgressBar from "./ProgressBar";
 
  export default function Gender(){ 
   const navigate = useNavigate()
       
   const[gender, setGender]=useState();
+  
+  const testData = [
+    { bgcolor: "#6a1b9a", completed: 33.3 },
+    ];
     return(
       
         <div>
+        {testData.map((item, idx) => (
+      <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+    ))}
             <div className="text--gender">
                 <h2>Select Your Gender</h2>
                 Gender is important for form. 

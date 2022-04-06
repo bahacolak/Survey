@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import "./Date.css"
+import "./Date.css";
+import ProgressBar from "./ProgressBar";
 
 export default function Date() {
   const [date, setDate] = useState();
 
   const navigate = useNavigate()
+  
+  const testData = [
+    { bgcolor: "#6a1b9a", completed: 66.6 },
+    ];
   return (
     
     <div>
+    {testData.map((item, idx) => (
+      <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+    ))}
       <div className='container'>
       <div className='text--date'><h1>Your Date of Birth: {date}</h1>
        <input type="date" onChange={e =>setDate(e.target.value)}/>

@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from "./ProgressBar";
 
-export default function Place() {
-  const [place, setPlace] = useState(); 
+
+export default function Place() { 
 
   const navigate = useNavigate()
-
+  const testData = [
+    { bgcolor: "#6a1b9a", completed: 100 },
+    ];
     return(
        <div>
-           <div>
+       {testData.map((item, idx) => (
+      <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+    ))}
+           <div className="container">
              <h3>Please Enter Your Place of Birth</h3>
              <input type="text" placeholder="City/Country" />
            </div>
-           <div>
-             <button onClick={() => navigate('/Loading')} className="btn btn-primary ">Finish Your Survey!</button>
+           <div className="row">
+             <button onClick={() => navigate('/Loading')} className="btn btn-primary col-sm-2 offset-sm-5 ">Finish Your Survey!</button>
            </div>
        </div>
 

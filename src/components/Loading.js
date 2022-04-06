@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Loading() {
+export default function Loading(){
     return(
-        <div>Loading page</div>
+        <div>hey its loading page</div>
     )
 }
