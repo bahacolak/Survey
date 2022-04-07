@@ -11,8 +11,8 @@ import ProgressBar from "./ProgressBar";
   const testData = [
     { bgcolor: "#6a1b9a", completed: 0.0 },
     ];
+    
     return(
-      
         <div>
         {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
