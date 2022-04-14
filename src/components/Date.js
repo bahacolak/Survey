@@ -13,18 +13,18 @@ export default function Date() {
     ];
   return (
     
-    <div>
-      <div className='container'>
+    <div className='date'>
+      <div>
       {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
-      <div className='text--date'><h1>Your Date of Birth: {date}</h1>
+      </div>
+      <div className='date--birth'>
+       <h1>Your Date of Birth: {date}</h1>
        <input type="date" onChange={e =>setDate(e.target.value)}/>
       </div>
-      </div>
-
-      <div className='row'> 
-        <button onClick={() => navigate('/Place')} className="btn btn-primary col-sm-2 offset-sm-5">Continue</button>
+      <div> 
+        <button onClick={() => navigate('/Place')} className="btn btn-primary">Continue</button>
       </div>
     </div>
     
