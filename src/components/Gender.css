@@ -1,10 +1,16 @@
-.text--gender{
+.gender {
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 50px;
-    margin-right: 20px;
-    height: 100px;
 }
+
+.gender--select {
+   margin-top: 40px; 
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+
 
 
 

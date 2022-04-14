@@ -13,29 +13,29 @@ import ProgressBar from "./ProgressBar";
     ];
     
     return(
-        <div>
+        <div className="gender">
         {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
-            <div className="text--gender">
+            <div>
                 <h2>Select Your Gender</h2>
                 Gender is important for form. 
             </div>
             
-            <div className="col offset-2">
-            <h1 className="col-12 offset-4">{gender}</h1>
-            <label className="col-3 offset-2">
+            <div className="gender--select">
+            <h1>{gender}</h1>
+            <label>
               <input type="radio" name="gender" value="Male"  onChange={e=>setGender(e.target.value)}/>Male
-              <img  src="https://i.ibb.co/r6mpKBL/Male.png" width="150" height="170"  />
+              <img  src="https://i.ibb.co/r6mpKBL/Male.png" width="130" height="160"  />
             </label>
-            <label className="col-5">
+            <label>
               <input type="radio" name="gender" value="Female"  onChange={e=>setGender(e.target.value)}/>Female
               <img src="https://i.ibb.co/Svmt803/Female.png" width="150" height="170" />
             </label> 
 
             </div> 
-            <div className="row">
-                <button onClick={() => navigate('/Date')} className="btn btn-primary col-sm-2 offset-sm-5">Continue</button>
+            <div>
+                <button onClick={() => navigate('/Date')} className="btn btn-primary ">Continue</button>
             </div>
         </div>
     );
