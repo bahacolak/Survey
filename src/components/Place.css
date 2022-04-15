@@ -5,3 +5,55 @@
 .text--place{
     margin-top: 130px;
 }
+
+@media screen and (min-width:1px) {
+   
+    .t--place{
+      font-size: 20px;
+    }
+    
+    
+    .progressbar{
+      width: 80%;
+    }
+  }
+  
+  @media screen and (min-width:600px) {
+    .t--place{
+      font-size: 25px;
+    }
+  
+    .progressbar{
+      width: 87%;  
+    }
+  }
+  
+  @media screen and (min-width:900px) {
+    .t--place{
+      font-size: 30px;
+    }
+  
+    .progressbar{
+      width: 95%  
+    }
+  }
+  
+  @media screen and (min-width:1200px) {
+    .t--place{
+      font-size: 35px;
+    }
+  
+    .progressbar{
+      width: 100%;  
+    }
+  }
+  
+  @media screen and (min-width:1500px) {
+    .t--place{
+      font-size: 35px;
+    }
+  
+    .progressbar{
+      width: 104%;  
+    }
+  }

@@ -11,13 +11,13 @@ export default function Place() {
     ];
     return(
        <div className="place">
-           <div>
+           <div className="progressbar">
            {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
            </div>
            <div className="text--place">
-             <h3>Please Enter Your Place of Birth</h3>
+             <h3 className="t--place">Please Enter Your Place of Birth</h3>
              <input type="text" placeholder="City/Country" />
            </div>
            <div>
