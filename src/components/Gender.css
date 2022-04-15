@@ -11,67 +11,108 @@
 }
 
 
-
 @media screen and (min-width:1px) {
     .female img{
-    width:  75px;
-    height: 75px;
+      width:  75px;
+      height: 75px;
     
     } 
 
     .male img{
-    width:  75px;
-    height: 75px;
+      width:  75px;
+      height: 75px;
     }
 
     .gender--text{
-    font-size:20px ;
+      font-size:20px ;
+    }
+    
+    .progressbar{
+      width: 80%;
     }
 }
 
 @media screen and (min-width:600px) {
     .female img{
-    width:  1000px;        
-    height: 1000px;
+      width:  100px;        
+      height: 100px;
     }
 
     .male img{
-    width:  1000px;
-    height: 1000px;
+      width:  100px;
+      height: 100px;
     }
 
     .gender--text{
-    font-size:125px ;  
+      font-size:25px ;  
+    }
+
+    .progressbar{
+      width: 87%;  
     }
 }
 
 @media screen and (min-width:900px) {
     .female img{
-    
+        width:  125px;        
+        height: 125px;
     }
 
     .male img{
-        
+      width:  125px;        
+      height: 125px;
     }
 
     .gender--text{
-        
+       font-size: 30px; 
+    }
+
+    .progressbar{
+      width: 95%  
     }
 }
 
 @media screen and (min-width:1200px) {
     .female img{
-    
+        width:  130px;        
+        height: 160px;
     }
 
     .male img{
-        
+      width:  150px;        
+      height: 170px;
     }
 
     .gender--text{
-        
+       font-size: 35px; 
+    }
+
+    .progressbar{
+      width: 100%;  
     }
 }
+
+@media screen and (min-width:1500px) {
+    .female img{
+        width:  130px;        
+        height: 160px;
+    }
+
+    .male img{
+      width:  150px;        
+      height: 170px;
+    }
+
+    .gender--text{
+       font-size: 35px; 
+    }
+
+    .progressbar{
+      width: 104%;  
+    }
+}
+
+
 
 
 

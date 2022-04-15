@@ -14,9 +14,11 @@ import ProgressBar from "./ProgressBar";
     
     return(
         <div className="gender">
+        <div className="progressbar">
         {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
+    </div>
             <div>
                 <h2>Select Your Gender</h2>
                 Gender is important for form. 
