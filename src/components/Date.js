@@ -14,13 +14,13 @@ export default function Date() {
   return (
     
     <div className='date'>
-      <div>
+      <div className='progressbar'>
       {testData.map((item, idx) => (
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
       </div>
       <div className='date--birth'>
-       <h1>Your Date of Birth: {date}</h1>
+       <h1 className='text--date'>Your Date of Birth: {date}</h1>
        <input type="date" onChange={e =>setDate(e.target.value)}/>
       </div>
       <div> 

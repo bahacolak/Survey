@@ -5,3 +5,56 @@
 .date--birth{
   margin-top: 130px;
 }
+
+
+@media screen and (min-width:1px) {
+   
+  .text--date{
+    font-size: 20px;
+  }
+  
+  
+  .progressbar{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:600px) {
+  .text--date{
+    font-size: 25px;
+  }
+
+  .progressbar{
+    width: 87%;  
+  }
+}
+
+@media screen and (min-width:900px) {
+  .text--date{
+    font-size: 30px;
+  }
+
+  .progressbar{
+    width: 95%  
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .text--date{
+    font-size: 35px;
+  }
+
+  .progressbar{
+    width: 100%;  
+  }
+}
+
+@media screen and (min-width:1500px) {
+  .text--date{
+    font-size: 35px;
+  }
+
+  .progressbar{
+    width: 104%;  
+  }
+}
