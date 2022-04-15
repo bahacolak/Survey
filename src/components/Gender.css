@@ -12,6 +12,71 @@
 
 
 
+@media screen and (min-width:1px) {
+    .female img{
+    width:  75px;
+    height: 75px;
+    
+    } 
+
+    .male img{
+    width:  75px;
+    height: 75px;
+    }
+
+    .gender--text{
+    font-size:20px ;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .female img{
+    width:  1000px;        
+    height: 1000px;
+    }
+
+    .male img{
+    width:  1000px;
+    height: 1000px;
+    }
+
+    .gender--text{
+    font-size:125px ;  
+    }
+}
+
+@media screen and (min-width:900px) {
+    .female img{
+    
+    }
+
+    .male img{
+        
+    }
+
+    .gender--text{
+        
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .female img{
+    
+    }
+
+    .male img{
+        
+    }
+
+    .gender--text{
+        
+    }
+}
+
+
+
+
+
 
 
 
