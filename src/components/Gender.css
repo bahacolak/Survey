@@ -6,6 +6,33 @@
    margin-top: 40px; 
 }
 
+.radio--hide{
+  display: none;
+}
+
+.male img{
+  margin-right: 8rem;
+  cursor: pointer;
+  border: 5px ridge rgb(163, 163, 38);
+  transition: 0.5s;
+}
+
+.male img:hover{
+  background-color:rgb(53, 21, 194);
+  transition: all 0.5s;
+}
+
+.female img{
+  cursor: pointer;
+  border: 5px ridge rgb(163, 163, 38) ;
+  transition: 0.5s;
+}
+
+.female img:hover{
+  background-color:rgb(219, 150, 162);
+  transition: all 0.5s;
+}
+
 .button{
   display: inline-block;
   border-radius: 4px;
@@ -51,6 +78,32 @@
   background: blue;
 }
 
+.title{
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+}
+
+.title:where(:hover, :focus-visible){
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+.p--text{
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+}
+.p--text:where(:hover, :focus-visible){
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
 
 @media screen and (min-width:1px) {
     .female img{
@@ -62,6 +115,7 @@
     .male img{
       width:  75px;
       height: 75px;
+      margin-right: 4rem;
     }
 
     .gender--text{
@@ -73,90 +127,37 @@
     }
 
     .button{
-      width: 150px;
+      width: 100px;
     }
 
 }
 
 @media screen and (min-width:600px) {
-    .female img{
-      width:  100px;        
-      height: 100px;
-    }
-
-    .male img{
-      width:  100px;
-      height: 100px;
-    }
-
-    .gender--text{
-      font-size:25px ;  
-    }
-
-    .progressbar{
-      width: 87%;  
-    }
+  .female img{
+    width:  150px;        
+    height: 160px;
 }
 
-@media screen and (min-width:900px) {
-    .female img{
-        width:  125px;        
-        height: 125px;
-    }
-
-    .male img{
-      width:  125px;        
-      height: 125px;
-    }
-
-    .gender--text{
-       font-size: 30px; 
-    }
-
-    .progressbar{
-      width: 95%  
-    }
+.male img{
+  width:  150px;        
+  height: 160px;
+  margin-right: 8rem;
 }
 
-@media screen and (min-width:1200px) {
-    .female img{
-        width:  130px;        
-        height: 160px;
-    }
-
-    .male img{
-      width:  150px;        
-      height: 170px;
-    }
-
-    .gender--text{
-       font-size: 35px; 
-    }
-
-    .progressbar{
-      width: 100%;  
-    }
+.gender--text{
+   font-size: 35px; 
 }
 
-@media screen and (min-width:1500px) {
-    .female img{
-        width:  150px;        
-        height: 170px;
-    }
-
-    .male img{
-      width:  130px;        
-      height: 160px;
-    }
-
-    .gender--text{
-       font-size: 35px; 
-    }
-
-    .progressbar{
-      width: 104%;  
-    }
+.progressbar{
+  width: 104%;  
 }
+
+.button{
+  width: 170px;
+}
+}
+
+
 
 
 

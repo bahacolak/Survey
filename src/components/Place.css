@@ -6,6 +6,20 @@
     margin-top: 130px;
 }
 
+.t--place{
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+}
+
+.t--place:where(:hover, :focus-visible){
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
 @media screen and (min-width:1px) {
    
     .t--place{
@@ -19,36 +33,6 @@
   
   @media screen and (min-width:600px) {
     .t--place{
-      font-size: 25px;
-    }
-  
-    .progressbar{
-      width: 87%;  
-    }
-  }
-  
-  @media screen and (min-width:900px) {
-    .t--place{
-      font-size: 30px;
-    }
-  
-    .progressbar{
-      width: 95%  
-    }
-  }
-  
-  @media screen and (min-width:1200px) {
-    .t--place{
-      font-size: 35px;
-    }
-  
-    .progressbar{
-      width: 100%;  
-    }
-  }
-  
-  @media screen and (min-width:1500px) {
-    .t--place{
       font-size: 35px;
     }
   
@@ -56,3 +40,5 @@
       width: 104%;  
     }
   }
+  
+  

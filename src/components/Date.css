@@ -6,6 +6,20 @@
   margin-top: 130px;
 }
 
+.text--date{
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+}
+
+.text--date:where(:hover, :focus-visible){
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
 
 @media screen and (min-width:1px) {
    
@@ -22,36 +36,6 @@
 
 @media screen and (min-width:600px) {
   .text--date{
-    font-size: 25px;
-  }
-
-  .progressbar{
-    width: 87%;  
-  }
-}
-
-@media screen and (min-width:900px) {
-  .text--date{
-    font-size: 30px;
-  }
-
-  .progressbar{
-    width: 95%  
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .text--date{
-    font-size: 35px;
-  }
-
-  .progressbar{
-    width: 100%;  
-  }
-}
-
-@media screen and (min-width:1500px) {
-  .text--date{
     font-size: 35px;
   }
 
@@ -59,3 +43,4 @@
     width: 104%;  
   }
 }
+

@@ -19,19 +19,19 @@ import ProgressBar from "./ProgressBar";
       <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
     ))}
     </div>
-            <div>
-                <h2>Select Your Gender</h2>
+            <div className="p--text">
+                <h2 className="title">Select Your Gender</h2>
                 Gender is important for form. 
             </div>
             
             <div className="gender--select">
             <h1 className="gender--text">{gender}</h1>
             <label className="male">
-              <input type="radio" name="gender" value="Male"  onChange={e=>setGender(e.target.value)}/>Male
+              <input className="radio--hide" type="radio" name="gender" value="Male"  onChange={e=>setGender(e.target.value)}/>
               <img  src="https://i.ibb.co/r6mpKBL/Male.png" width="130" height="160"  />
             </label>
             <label className="female">
-              <input type="radio" name="gender" value="Female"  onChange={e=>setGender(e.target.value)}/>Female
+              <input className="radio--hide" type="radio" name="gender" value="Female"  onChange={e=>setGender(e.target.value)}/>
               <img src="https://i.ibb.co/Svmt803/Female.png" width="150" height="170" />
             </label> 
 
