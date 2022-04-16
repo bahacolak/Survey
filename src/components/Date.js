@@ -24,7 +24,7 @@ export default function Date() {
        <input type="date" onChange={e =>setDate(e.target.value)}/>
       </div>
       <div> 
-        <button onClick={() => navigate('/Place')} className="btn btn-primary">Continue</button>
+        <button className="button" onClick={() => navigate('/Place')}><span>Continue</span></button>
       </div>
     </div>
     

@@ -21,7 +21,7 @@ export default function Place() {
              <input type="text" placeholder="City/Country" />
            </div>
            <div>
-             <button onClick={() => navigate('/Loading')} className="btn btn-primary">Finish Your Survey!</button>
+             <button className="button" onClick={() => navigate('/Loading')}><span>Finish Your Survey!</span></button>
            </div>
        </div>
 
