@@ -6,8 +6,49 @@
    margin-top: 40px; 
 }
 
-.btn{
-    margin-top: 20px;
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 35px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover{
+  background: blue;
 }
 
 
@@ -29,6 +70,10 @@
     
     .progressbar{
       width: 80%;
+    }
+
+    .button{
+      width: 100px;
     }
 }
 
@@ -94,13 +139,13 @@
 
 @media screen and (min-width:1500px) {
     .female img{
-        width:  130px;        
-        height: 160px;
+        width:  150px;        
+        height: 170px;
     }
 
     .male img{
-      width:  150px;        
-      height: 170px;
+      width:  130px;        
+      height: 160px;
     }
 
     .gender--text{

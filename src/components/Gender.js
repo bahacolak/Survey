@@ -37,7 +37,7 @@ import ProgressBar from "./ProgressBar";
 
             </div> 
             <div>
-                <button onClick={() => navigate('/Date')} className="btn btn-primary ">Continue</button>
+                <button className="button" onClick={() => navigate('/Date')}><span>Continue</span></button>
             </div>
         </div>
     );
